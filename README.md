@@ -31,3 +31,22 @@ Listagem de HTTP e Rest
 •  TRACE: Ecoa de volta a requisição recebida para que o cliente possa ver quais alterações ou adições foram feitas pelo servidor ou intermediários.
 •  CONNECT: Estabelece um túnel para o servidor identificado pelo URI fornecido.
 
+Claro, vou definir as responsabilidades de cada uma das camadas em um típico padrão de arquitetura de software, como geralmente são entendidas:
+
+1. **Entity (Entidade)**:
+   - Responsabilidade: Representa uma estrutura de dados ou objeto dentro do domínio do negócio. 
+   - Descrição: Esta camada normalmente contém classes ou estruturas de dados que modelam as entidades principais do sistema, como usuários, produtos, pedidos, etc. Elas geralmente refletem diretamente as tabelas do banco de dados em um sistema de persistência de dados.
+
+2. **Repository (Repositório)**:
+   - Responsabilidade: Gerencia a camada de acesso aos dados, abstraindo as operações de persistência.
+   - Descrição: Esta camada fornece uma interface para acesso aos dados armazenados (geralmente um banco de dados, mas pode ser qualquer fonte de dados). Ela encapsula a lógica de consulta e persistência de dados, permitindo que outras partes do sistema interajam com os dados sem precisar conhecer detalhes da implementação de armazenamento.
+
+3. **Service (Serviço)**:
+   - Responsabilidade: Implementa a lógica de negócios e coordena a execução das operações do sistema.
+   - Descrição: Os serviços contêm a lógica de aplicação do sistema. Eles são responsáveis por orquestrar as operações que não pertencem diretamente às entidades ou aos repositórios, mas sim à lógica de negócios. Isso pode incluir validações complexas, operações que envolvem várias entidades ou transações, regras de negócio específicas, etc.
+
+4. **Controller (Controlador)**:
+   - Responsabilidade: Gerencia as requisições HTTP, controla o fluxo de dados entre a camada de visão (front-end) e o backend.
+   - Descrição: Nos sistemas web, os controladores recebem requisições dos clientes (por exemplo, navegadores ou aplicativos móveis), processam essas requisições, e coordenam a execução dos serviços necessários para cumprir as requisições. Eles lidam com a entrada e a saída de dados, convertendo dados de requisições em chamadas para os serviços apropriados e convertendo as respostas desses serviços em respostas HTTP para o cliente.
+
+Essas definições são bastante genéricas e podem variar dependendo do contexto e das especificações de um projeto específico. No entanto, essas camadas são comumente encontradas em arquiteturas de software que seguem padrões como MVC (Model-View-Controller) ou arquiteturas mais modernas baseadas em serviços (como microservices).
