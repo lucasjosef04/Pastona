@@ -50,3 +50,22 @@ Claro, vou definir as responsabilidades de cada uma das camadas em um típico pa
    - Descrição: Nos sistemas web, os controladores recebem requisições dos clientes (por exemplo, navegadores ou aplicativos móveis), processam essas requisições, e coordenam a execução dos serviços necessários para cumprir as requisições. Eles lidam com a entrada e a saída de dados, convertendo dados de requisições em chamadas para os serviços apropriados e convertendo as respostas desses serviços em respostas HTTP para o cliente.
 
 Essas definições são bastante genéricas e podem variar dependendo do contexto e das especificações de um projeto específico. No entanto, essas camadas são comumente encontradas em arquiteturas de software que seguem padrões como MVC (Model-View-Controller) ou arquiteturas mais modernas baseadas em serviços (como microservices).
+
+Padrão de Projeto
+Um padrão de projeto é uma solução reutilizável para um problema comum que ocorre frequentemente durante o desenvolvimento de software. Esses padrões fornecem uma abordagem comprovada para resolver problemas de design e arquitetura de sistemas, promovendo a consistência e a eficiência no processo de desenvolvimento. Utilizamos padrões de projeto porque eles ajudam a melhorar a comunicação entre desenvolvedores, facilitam a manutenção e a escalabilidade do software e reduzem o risco de erros. Além disso, eles promovem boas práticas e padrões de codificação, permitindo que soluções complexas sejam abordadas de maneira mais estruturada e compreensível.
+Arquitetura de Software
+A arquitetura de software é a estrutura fundamental de um sistema de software, que define a organização dos seus componentes, suas interações e a forma como esses elementos colaboram para atingir os objetivos do sistema. Esse conceito abrange a definição de módulos, interfaces, protocolos de comunicação e padrões de design que garantem a funcionalidade, a escalabilidade e a manutenção do sistema. O propósito da arquitetura de software é fornecer uma visão clara e estruturada do sistema, possibilitando a análise e a gestão de aspectos como desempenho, segurança e compatibilidade. Além disso, uma boa arquitetura ajuda a reduzir a complexidade, facilita a comunicação entre equipes de desenvolvimento e assegura que o software possa evoluir e se adaptar a novas necessidades ao longo do tempo.
+SOLID
+A sigla **SOLID** representa um conjunto de cinco princípios de design de software que visam melhorar a qualidade e a manutenibilidade do código. Esses princípios foram formulados por Robert C. Martin e são amplamente utilizados na engenharia de software para criar sistemas mais robustos e flexíveis. Abaixo estão os cinco princípios SOLID:
+
+1. **S - Single Responsibility Principle (Princípio da Responsabilidade Única)**: Cada classe deve ter uma única responsabilidade ou motivo para mudar. Isso significa que uma classe deve ter apenas uma razão para existir, facilitando a manutenção e a compreensão do código.
+
+2. **O - Open/Closed Principle (Princípio Aberto/Fechado)**: Entidades de software (como classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação. Isso permite adicionar novas funcionalidades sem alterar o código existente, reduzindo o risco de introduzir novos bugs.
+
+3. **L - Liskov Substitution Principle (Princípio da Substituição de Liskov)**: Objetos de uma classe derivada devem poder substituir objetos da classe base sem alterar o comportamento esperado do programa. Em outras palavras, uma classe derivada deve ser capaz de se comportar como a classe base sem causar efeitos inesperados.
+
+4. **I - Interface Segregation Principle (Princípio da Segregação de Interfaces)**: Uma classe não deve ser forçada a implementar interfaces que não usa. Isso significa que as interfaces devem ser específicas e adaptadas às necessidades dos clientes, evitando o "overengineering" e promovendo um design mais coeso.
+
+5. **D - Dependency Inversion Principle (Princípio da Inversão de Dependência)**: Módulos de alto nível não devem depender de módulos de baixo nível; ambos devem depender de abstrações. Além disso, abstrações não devem depender de detalhes, mas detalhes devem depender de abstrações. Esse princípio promove um desacoplamento entre os módulos, facilitando a substituição e a manutenção.
+
+Esses princípios são projetados para ajudar a criar software que seja mais fácil de entender, manter e escalar, além de promover um design que possa evoluir sem grandes refatorações.
